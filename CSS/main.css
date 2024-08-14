@@ -1,5 +1,5 @@
 body {
-    background-color: #4a4d52;
+    background-color: #313131;
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
@@ -7,7 +7,8 @@ body {
 
 /* Estilo del header */
 header {
-    background-color: rgba(133, 133, 133, 0.8); /* Fondo sólido con opacidad */
+    background: linear-gradient(180deg, #172033e7, #00294400);
+    /*background-color: rgba(36, 77, 124, 0.301); /* Fondo sólido con opacidad */
     color: white;
     padding: 30px;
     display: flex;
@@ -96,6 +97,7 @@ nav .nav-links a:hover {
 }
 
 .footer {
+    background-color: #313131;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -300,6 +302,7 @@ button[type="submit"]:hover {
 /* Ajusta el margen superior del contenido para no superponerse con el header */
 main {
     margin-top: 90px; /* Ajusta según el tamaño completo del header */
+    background: linear-gradient(180deg, #3f323f, #313131);
 }
 
 @media (max-width: 768px) {
