@@ -173,7 +173,7 @@ button.prev:hover, button.next:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.contact-form-section {
+.contact-form-section {   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,6 +294,11 @@ button[type="submit"]:hover {
     max-width: 500px; /* Ancho máximo del texto */
 }
 
+p .portfolio-text {
+    text-align: justify;
+    margin-top: 10px;
+}
+
 /* Alternar la posición de la imagen y el texto en versión escritorio */
 .portfolio-item:nth-child(even) {
     flex-direction: row-reverse;
@@ -312,7 +317,7 @@ main {
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: #1a1a1a36;
+        background-color: #838383a2;
         border-radius: 13px;
         width: 100%;
         z-index: 1;
