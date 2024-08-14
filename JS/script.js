@@ -1,8 +1,18 @@
 const mobileMenu = document.getElementById('mobile-menu');
 const navLinks = document.querySelector('.nav-links');
+let menuTimeout;
 
 mobileMenu.addEventListener('click', () => {
     navLinks.classList.toggle('active'); // Alterna la clase 'active' en el menú
+
+    if (navLinks.classList.contains('active')) {
+        clearTimeout(menuTimeout); // Cancela cualquier temporizador anterior
+        menuTimeout = setTimeout(() => {
+            navLinks.classList.remove('active'); // Cierra el menú después de 7 segundos
+        }, 1500); // 7000 milisegundos = 7 segundos
+    } else {
+        clearTimeout(menuTimeout); // Cancela el temporizador si el menú se cierra manualmente
+    }
 });
 
 let currentSlide = 0;
